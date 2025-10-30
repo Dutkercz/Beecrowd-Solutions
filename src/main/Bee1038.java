@@ -13,6 +13,21 @@ import java.util.Scanner;
 public class Bee1038 {
 
     public static void main(String[] args) {
+        Map<Integer, Double> menu = new HashMap<>();
+        menu.put(1, 4.0);
+        menu.put(2, 4.5);
+        menu.put(3, 5.0);
+        menu.put(4, 2.0);
+        menu.put(5, 1.5);
+
+        Scanner scanner = new Scanner(System.in);
+
+        int codigo = scanner.nextInt();
+        int quantidade = scanner.nextInt();
+
+        if (menu.containsKey(codigo)){
+            System.out.printf("Total: R$ %.2f", (menu.get(codigo) * quantidade));
+        }
 
     }
 }
