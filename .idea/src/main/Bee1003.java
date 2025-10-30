@@ -1,4 +1,7 @@
 package main;
+
+import java.util.Scanner;
+
 /**
  * Leia dois valores inteiros, no caso para variáveis A e B.
  * A seguir, calcule a soma entre elas e atribua à variável SOMA.
@@ -11,11 +14,12 @@ package main;
  * Como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário,
  * você receberá "Presentation Error".
  */
-
 public class Bee1003 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
 
-
-
+        System.out.println("SOMA = "+ (a+b));
     }
 }
